@@ -1,0 +1,106 @@
+name: Bug report
+description: Something in Hush Hour does not work, looks wrong or crashes.
+title: "[bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time. One problem per report, please.
+        Before you attach a screenshot, crop or cover anything private. Issues here are public.
+  - type: input
+    id: version
+    attributes:
+      label: App version
+      description: "Android settings, Apps, Hush Hour. The version is near the bottom of that page."
+      placeholder: "1.0"
+    validations:
+      required: true
+  - type: input
+    id: phone
+    attributes:
+      label: Phone model
+      description: Android settings, About phone.
+      placeholder: Pixel 8
+    validations:
+      required: true
+  - type: input
+    id: android
+    attributes:
+      label: Android version
+      description: Android settings, About phone, Android version.
+      placeholder: "15"
+    validations:
+      required: true
+  - type: dropdown
+    id: where
+    attributes:
+      label: "Which screen or sound?"
+      options:
+        - home screen
+        - sound tiles
+        - rain
+        - window
+        - roof
+        - tent
+        - downpour
+        - storm
+        - ocean
+        - stream
+        - forest
+        - wind
+        - crickets
+        - campfire
+        - fireplace
+        - fan
+        - white noise
+        - pink noise
+        - brown noise
+        - mix sliders or overall level
+        - sleep timer
+        - night scene
+        - dim screen
+        - mixes
+        - settings
+        - widget
+        - notification or lock screen
+        - other
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: What you did, one step per line.
+      placeholder: |
+        1. Open ...
+        2. Tap ...
+        3. See ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: What happened instead
+    validations:
+      required: true
+  - type: textarea
+    id: media
+    attributes:
+      label: Screenshot or screen recording
+      description: Drag the file in here. A short recording helps a lot with scene or playback bugs.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before you send
+      options:
+        - label: I searched the open issues and this is not there yet.
+          required: true
+        - label: My screenshots show nothing private.
+          required: true

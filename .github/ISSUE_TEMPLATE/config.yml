@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: User guide
+    url: https://zanoshky.github.io/hush-hour-app/
+    about: Sounds, mixes, the sleep timer, the widget and answers to common questions.
+  - name: hushhour.zanoski.com
+    url: https://hushhour.zanoski.com
+    about: The Hush Hour website, with the privacy policy and contact details.

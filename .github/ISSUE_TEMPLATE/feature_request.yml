@@ -1,0 +1,66 @@
+name: Feature request
+description: An idea for something Hush Hour could do.
+title: "[idea] "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What you want
+      description: Describe the feature in a few lines.
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why
+      description: What would it help you do? A real example helps.
+    validations:
+      required: true
+  - type: dropdown
+    id: where
+    attributes:
+      label: "Which screen or sound?"
+      options:
+        - home screen
+        - sound tiles
+        - rain
+        - window
+        - roof
+        - tent
+        - downpour
+        - storm
+        - ocean
+        - stream
+        - forest
+        - wind
+        - crickets
+        - campfire
+        - fireplace
+        - fan
+        - white noise
+        - pink noise
+        - brown noise
+        - mix sliders or overall level
+        - sleep timer
+        - night scene
+        - dim screen
+        - mixes
+        - settings
+        - widget
+        - notification or lock screen
+        - other
+    validations:
+      required: true
+  - type: textarea
+    id: media
+    attributes:
+      label: Pictures or links
+      description: A sketch, a screenshot or a link to something similar.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before you send
+      options:
+        - label: I searched the open issues and this idea is not there yet.
+          required: true
