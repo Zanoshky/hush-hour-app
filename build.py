@@ -178,5 +178,5 @@ page("report.html", "Report a bug", "How to report a Hush Hour bug or ask for a 
     <p>Issues on GitHub are public. Before you attach a screenshot, crop or cover anything private.</p>
 
     <h2>Other ways</h2>
-    <p>Prefer not to use GitHub? Write to <span class="mail">zanoski.marko@gmail.com</span> (<a href="mailto:zanoski.marko@gmail.com">write an email</a>).</p>
+    <p>Prefer not to use GitHub? Write to <span class="mail">marko@zanoski.com</span> (<a href="mailto:marko@zanoski.com">write an email</a>).</p>
 """)
