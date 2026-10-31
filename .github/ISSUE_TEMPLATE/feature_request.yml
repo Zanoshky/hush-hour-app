@@ -22,7 +22,7 @@ body:
     attributes:
       label: "Which screen or sound?"
       options:
-        - home screen
+        - sounds (the dial and play)
         - sound tiles
         - rain
         - window
@@ -43,10 +43,11 @@ body:
         - brown noise
         - mix sliders or overall level
         - sleep timer
-        - night scene
         - dim screen
         - mixes
+        - more (the three dots)
         - settings
+        - look (light, dark or black)
         - widget
         - notification or lock screen
         - other

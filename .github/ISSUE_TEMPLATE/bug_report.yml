@@ -12,7 +12,7 @@ body:
     id: version
     attributes:
       label: App version
-      description: "Android settings, Apps, Hush Hour. The version is near the bottom of that page."
+      description: "In the app: Settings, About. Or Android settings, Apps, Hush Hour."
       placeholder: "1.0"
     validations:
       required: true
@@ -37,7 +37,7 @@ body:
     attributes:
       label: "Which screen or sound?"
       options:
-        - home screen
+        - sounds (the dial and play)
         - sound tiles
         - rain
         - window
@@ -58,10 +58,11 @@ body:
         - brown noise
         - mix sliders or overall level
         - sleep timer
-        - night scene
         - dim screen
         - mixes
+        - more (the three dots)
         - settings
+        - look (light, dark or black)
         - widget
         - notification or lock screen
         - other
@@ -94,7 +95,7 @@ body:
     id: media
     attributes:
       label: Screenshot or screen recording
-      description: Drag the file in here. A short recording helps a lot with scene or playback bugs.
+      description: Drag the file in here. A short recording helps a lot with playback bugs.
   - type: checkboxes
     id: checks
     attributes:

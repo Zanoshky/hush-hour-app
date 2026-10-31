@@ -4,81 +4,404 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Guide · Hush Hour user guide</title>
-<meta name="description" content="How to use Hush Hour: sounds, mixes, the sleep timer, the dim screen, the widget and settings.">
-<meta name="theme-color" content="#060817">
+<meta name="description" content="How to use Hush Hour: Sounds and Mixes, the sleep timer, More, the dim screen, the widget and Settings.">
+<meta name="theme-color" content="#f6f7f9" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
 <meta property="og:title" content="Guide · Hush Hour user guide">
-<meta property="og:description" content="How to use Hush Hour: sounds, mixes, the sleep timer, the dim screen, the widget and settings.">
+<meta property="og:description" content="How to use Hush Hour: Sounds and Mixes, the sleep timer, More, the dim screen, the widget and Settings.">
 <link rel="icon" href="img/icon.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/jetbrains-mono-bold.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="fonts/inter-regular.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="fonts/instrument-serif.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="style.css">
+<style>:root {
+color-scheme: light dark;
+--zs-fill: #004cc0;
+--zs-on-fill: #ffffff;
+--zs-glow: #0068ff;
+--zs-mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+--zs-sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+--zs-fs: 1;
+--zs-type-screen-title: calc(27px * var(--zs-fs));
+--zs-type-app-bar-title: calc(22px * var(--zs-fs));
+--zs-type-pro-headline: calc(22px * var(--zs-fs));
+--zs-type-sheet-title: calc(18px * var(--zs-fs));
+--zs-type-sheet-title-big: calc(22px * var(--zs-fs));
+--zs-type-section-label: calc(13px * var(--zs-fs));
+--zs-type-panel-value: calc(19px * var(--zs-fs));
+--zs-type-number: calc(20px * var(--zs-fs));
+--zs-type-version: calc(17px * var(--zs-fs));
+--zs-type-body: calc(15px * var(--zs-fs));
+--zs-type-key: calc(15px * var(--zs-fs));
+--zs-type-key-main: calc(16px * var(--zs-fs));
+--zs-type-header-key: calc(13px * var(--zs-fs));
+--zs-type-item-name: calc(15px * var(--zs-fs));
+--zs-type-feature-name: calc(15px * var(--zs-fs));
+--zs-type-pitch: calc(14.5px * var(--zs-fs));
+--zs-type-hint: calc(14px * var(--zs-fs));
+--zs-type-small: calc(13.5px * var(--zs-fs));
+--zs-type-feature-line: calc(13px * var(--zs-fs));
+--zs-type-nav-label: calc(12.5px * var(--zs-fs));
+--zs-type-chip: calc(12.5px * var(--zs-fs));
+--zs-type-meta: calc(12.5px * var(--zs-fs));
+--zs-type-axis: calc(12px * var(--zs-fs));
+--zs-r-plate: 16px;
+--zs-r-key: 14px;
+--zs-r-key-focus-inner: 10px;
+--zs-r-header-key: 12px;
+--zs-r-icon-button: 12px;
+--zs-r-row: 12px;
+--zs-r-note: 12px;
+--zs-r-theme-tile: 14px;
+--zs-r-tile-preview: 9px;
+--zs-r-feature-tile: 10px;
+--zs-r-list-icon: 10px;
+--zs-r-sheet-top: 24px;
+--zs-r-grab: 4px;
+--zs-r-pill: 999px;
+--zs-r-chip: 999px;
+--zs-r-switch: 999px;
+--zs-key-h: 52px;
+--zs-header-key-h: 48px;
+--zs-touch: 48px;
+--zs-row-h: 52px;
+--zs-item-h: 56px;
+--zs-nav-item-h: 56px;
+--zs-pill-w: 60px;
+--zs-pill-h: 32px;
+--zs-pro-row-h: 60px;
+--zs-content-max: 1100px;
+--zs-press-ms: 70ms;
+--zs-release-ms: 140ms;
+--zs-look-ms: 250ms;
+--zs-pill-ms: 200ms;
+--zs-s0: 2px;
+--zs-s1: 4px;
+--zs-s2: 6px;
+--zs-s3: 8px;
+--zs-s4: 10px;
+--zs-s5: 12px;
+--zs-s6: 14px;
+--zs-s7: 16px;
+--zs-s8: 18px;
+--zs-s9: 22px;
+--zs-s10: 26px;
+--zs-s11: 28px;
+--zs-s12: 32px;
+--zs-s13: 48px;
+--zs-ground: #f6f7f9;
+--zs-plate: #ffffff;
+--zs-well: #eceef2;
+--zs-line: #dfe2e8;
+--zs-edge: #7b808c;
+--zs-bevel: #ffffff;
+--zs-text: #121418;
+--zs-soft: #3d414a;
+--zs-blue: #0a45ad;
+--zs-on-blue: #ffffff;
+--zs-ok: #0a5530;
+--zs-warn: #5c3a00;
+--zs-bad: #931313;
+--zs-scrim: rgba(18,20,24,.38);
+--zs-chosen: #e8f0ff;
+--zs-on-chosen: #0a3f9e;
+--zs-risky-fill: #fde8e7;
+--zs-risky-text: #8a1010;
+--zs-risky-line: #d42a20;
+--zs-live-dot: #1a7f4b;
+}
+@media (prefers-color-scheme: dark) {
+:root:not([data-look]), :root[data-look="auto"] {
+--zs-ground: #000000;
+--zs-plate: #0d0d10;
+--zs-well: #16171b;
+--zs-line: #24252b;
+--zs-edge: #646771;
+--zs-bevel: #34363e;
+--zs-text: #ffffff;
+--zs-soft: #b6b8c0;
+--zs-blue: #7aaeff;
+--zs-on-blue: #04132e;
+--zs-ok: #6fdc9b;
+--zs-warn: #f2c06b;
+--zs-bad: #ff9d97;
+--zs-scrim: rgba(0,0,0,.6);
+--zs-chosen: #0a2350;
+--zs-on-chosen: #ffffff;
+--zs-risky-fill: #2a0d10;
+--zs-risky-text: #ffb4ae;
+--zs-risky-line: #ff5a4f;
+--zs-live-dot: #3ecf8e;
+}
+}
+:root[data-look="light"] {
+color-scheme: light;
+--zs-ground: #f6f7f9;
+--zs-plate: #ffffff;
+--zs-well: #eceef2;
+--zs-line: #dfe2e8;
+--zs-edge: #7b808c;
+--zs-bevel: #ffffff;
+--zs-text: #121418;
+--zs-soft: #3d414a;
+--zs-blue: #0a45ad;
+--zs-on-blue: #ffffff;
+--zs-ok: #0a5530;
+--zs-warn: #5c3a00;
+--zs-bad: #931313;
+--zs-scrim: rgba(18,20,24,.38);
+--zs-chosen: #e8f0ff;
+--zs-on-chosen: #0a3f9e;
+--zs-risky-fill: #fde8e7;
+--zs-risky-text: #8a1010;
+--zs-risky-line: #d42a20;
+--zs-live-dot: #1a7f4b;
+}
+:root[data-look="dark"] {
+color-scheme: dark;
+--zs-ground: #111215;
+--zs-plate: #18191d;
+--zs-well: #1f2126;
+--zs-line: #2a2c33;
+--zs-edge: #6c707b;
+--zs-bevel: #3a3d46;
+--zs-text: #eceef2;
+--zs-soft: #b5b8c1;
+--zs-blue: #86b6ff;
+--zs-on-blue: #04132e;
+--zs-ok: #6fdc9b;
+--zs-warn: #f2c06b;
+--zs-bad: #ff9d97;
+--zs-scrim: rgba(0,0,0,.55);
+--zs-chosen: #0a2350;
+--zs-on-chosen: #ffffff;
+--zs-risky-fill: #2a0d10;
+--zs-risky-text: #ffb4ae;
+--zs-risky-line: #ff5a4f;
+--zs-live-dot: #3ecf8e;
+}
+:root[data-look="black"] {
+color-scheme: dark;
+--zs-ground: #000000;
+--zs-plate: #0d0d10;
+--zs-well: #16171b;
+--zs-line: #24252b;
+--zs-edge: #646771;
+--zs-bevel: #34363e;
+--zs-text: #ffffff;
+--zs-soft: #b6b8c0;
+--zs-blue: #7aaeff;
+--zs-on-blue: #04132e;
+--zs-ok: #6fdc9b;
+--zs-warn: #f2c06b;
+--zs-bad: #ff9d97;
+--zs-scrim: rgba(0,0,0,.6);
+--zs-chosen: #0a2350;
+--zs-on-chosen: #ffffff;
+--zs-risky-fill: #2a0d10;
+--zs-risky-text: #ffb4ae;
+--zs-risky-line: #ff5a4f;
+--zs-live-dot: #3ecf8e;
+}
+@media (prefers-reduced-motion: reduce) { :root { --zs-press-ms: 0ms; --zs-release-ms: 0ms; --zs-look-ms: 0ms; --zs-pill-ms: 0ms; } }
+@font-face { font-family: Inter; src: url(fonts/inter-regular.woff2) format("woff2"); font-weight: 400; font-display: swap; }
+@font-face { font-family: Inter; src: url(fonts/inter-semibold.woff2) format("woff2"); font-weight: 600; font-display: swap; }
+@font-face { font-family: "JetBrains Mono"; src: url(fonts/jetbrains-mono-bold.woff2) format("woff2"); font-weight: 700; font-display: swap; }
+:root { --hh-live: #353f9e; }
+@media (prefers-color-scheme: dark) { :root:not([data-look]), :root[data-look="auto"] { --hh-live: #aab7ff; } }
+:root[data-look="light"] { --hh-live: #353f9e; }
+:root[data-look="dark"], :root[data-look="black"] { --hh-live: #aab7ff; }
+* { box-sizing: border-box; }
+html { background: var(--zs-ground); scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body { margin: 0; color: var(--zs-text); background: var(--zs-ground); font: 400 1.0625rem/1.6 var(--zs-sans); -webkit-font-smoothing: antialiased; }
+img, svg { display: block; max-width: 100%; }
+a { color: var(--zs-blue); text-underline-offset: .2em; }
+a:hover { text-decoration-thickness: 2px; }
+:focus-visible { outline: 2px solid var(--zs-glow); outline-offset: 3px; border-radius: var(--zs-r-row); }
+.skip { position: absolute; left: -999px; top: 8px; z-index: 20; background: var(--zs-fill); color: var(--zs-on-fill); padding: 12px 18px; border-radius: var(--zs-r-key); font-weight: 600; }
+.skip:focus { left: 12px; }
+.wrap { width: min(var(--zs-content-max), 100% - 40px); margin-inline: auto; }
+h1, h2, .lbl { font-family: var(--zs-mono); font-weight: 700; letter-spacing: 0; margin: 0; }
+h1, h2, h3 { text-wrap: balance; }
+p, li, dd { text-wrap: pretty; }
+h1 { font-size: clamp(2rem, 5.2vw, 3rem); line-height: 1.12; }
+h2 { font-size: clamp(1.375rem, 3vw, 1.75rem); line-height: 1.2; margin: 44px 0 12px; }
+h3, .h3 { font: 600 1.125rem/1.35 var(--zs-sans); margin: 0; }
+.lbl { font-size: .875rem; color: var(--zs-soft); margin: 0 0 10px; }
+p { margin: 0; }
+p + p { margin-top: 12px; }
+.bar { position: sticky; top: 0; z-index: 10; background: var(--zs-ground); border-bottom: 1px solid var(--zs-line); padding-top: env(safe-area-inset-top, 0px); }
+.bar .wrap { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0 12px; min-height: 64px; padding-block: 8px; }
+.brand { display: flex; align-items: center; gap: 10px; min-height: 48px; color: var(--zs-text); text-decoration: none; font: 700 1.25rem/1 var(--zs-mono); white-space: nowrap; }
+.brand img { width: 34px; height: 34px; border-radius: 9px; }
+.bar nav { display: flex; align-items: center; gap: 4px; }
+.bar nav a { display: inline-flex; align-items: center; min-height: 48px; padding: 0 14px; border-radius: var(--zs-r-row); color: var(--zs-soft); font-weight: 600; font-size: .9375rem; text-decoration: none; white-space: nowrap; }
+.bar nav a:hover, .bar nav a[aria-current] { color: var(--zs-text); background: var(--zs-well); }
+@media (max-width: 760px) { .hide-s { display: none !important; } }
+.key { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: var(--zs-key-h); padding: 0 22px; border-radius: var(--zs-r-key); border: 1px solid transparent; font: 600 1rem/1.2 var(--zs-sans); text-decoration: none; text-align: center; cursor: pointer; transition: transform var(--zs-release-ms) ease, filter var(--zs-release-ms) ease; }
+.key:active { transform: scale(.97); transition-duration: var(--zs-press-ms); }
+.key.filled, .bar nav a.key { color: var(--zs-on-fill); background: linear-gradient(var(--zs-fill), var(--zs-fill)) padding-box, linear-gradient(to bottom, rgba(255,255,255,.32), color-mix(in srgb, var(--zs-fill) 65%, #000) 45%) border-box; }
+.key.filled:hover, .bar nav a.key:hover { color: var(--zs-on-fill); filter: brightness(1.08); }
+.bar nav a.key { min-height: 48px; padding: 0 18px; border-radius: var(--zs-r-header-key); }
+.key.tonal { color: var(--zs-text); background: linear-gradient(var(--zs-well), var(--zs-well)) padding-box, linear-gradient(to bottom, var(--zs-bevel), var(--zs-line) 45%) border-box; }
+.keys { display: grid; gap: 10px; margin-top: 28px; max-width: 34rem; }
+@media (min-width: 35em) { .keys { grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); } }
+.plate { background: var(--zs-plate); border: 1px solid var(--zs-line); border-radius: var(--zs-r-plate); box-shadow: 0 1px 0 var(--zs-bevel) inset; }
+.page { position: relative; isolation: isolate; padding-block: 40px 72px; }
+.page::before { content: ""; position: absolute; inset: 0 0 auto; height: 320px; z-index: -1; pointer-events: none; background: radial-gradient(60% 100% at 50% 0%, color-mix(in srgb, var(--zs-glow) 12%, transparent), transparent); }
+.lede { margin-top: 16px; max-width: 40rem; color: var(--zs-soft); font-size: clamp(1.0625rem, 1.8vw, 1.25rem); }
+.doc { max-width: 46rem; overflow-wrap: break-word; }
+.doc p, .doc li { color: var(--zs-soft); }
+.doc strong, .doc b { color: var(--zs-text); font-weight: 600; }
+.doc ul, .doc ol { padding-left: 1.3em; }
+.doc li + li { margin-top: 6px; }
+dl.rows { margin: 16px 0 0; padding: 4px 0; }
+dl.rows > div { padding: 14px 18px; }
+dl.rows > div + div { border-top: 1px solid var(--zs-line); }
+dl.rows dt { font-weight: 600; color: var(--zs-text); }
+dl.rows dd { margin: 2px 0 0; color: var(--zs-soft); }
+.with-shot { display: grid; grid-template-columns: minmax(0, 1fr); gap: 24px; align-items: start; }
+@media (min-width: 840px) { .with-shot { grid-template-columns: minmax(0, 1fr) 260px; gap: 56px; } .with-shot > figure { position: sticky; top: 88px; margin-top: 44px; } }
+figure { margin: 0; }
+figure img { width: 100%; height: auto; aspect-ratio: 9 / 20; border-radius: 20px; border: 1px solid var(--zs-line); background: var(--zs-plate); }
+.with-shot > figure { max-width: 260px; }
+figcaption { margin-top: 10px; font-weight: 600; }
+figcaption span { display: block; font-weight: 400; color: var(--zs-soft); font-size: .9375rem; }
+.shots { display: grid; gap: 16px; grid-template-columns: repeat(2, minmax(0, 1fr)); margin: 32px 0 0; padding: 0; list-style: none; }
+@media (min-width: 840px) { .shots { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px; } }
+.cards { display: grid; gap: 12px; margin-top: 24px; }
+@media (min-width: 840px) { .cards { grid-template-columns: 1fr 1fr; } }
+.card { padding: 22px; display: flex; flex-direction: column; gap: 6px; }
+.card p { color: var(--zs-soft); }
+.card .key { margin-top: auto; align-self: start; }
+.card p:last-of-type { margin-bottom: 14px; }
+.mail { color: var(--zs-text); }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+footer { border-top: 1px solid var(--zs-line); padding: 28px 0 calc(28px + env(safe-area-inset-bottom, 0px)); color: var(--zs-soft); }
+footer .wrap { display: flex; flex-wrap: wrap; gap: 12px 24px; justify-content: space-between; align-items: center; }
+footer nav { display: flex; flex-wrap: wrap; gap: 2px; margin-inline: -12px; }
+footer nav a { display: inline-flex; align-items: center; min-height: 48px; padding: 0 12px; color: var(--zs-soft); border-radius: var(--zs-r-row); }
+footer nav a:hover, footer nav a[aria-current] { color: var(--zs-text); }
+footer .lic { flex-basis: 100%; font-size: .9375rem; }
+@media (min-width: 2200px) { html { font-size: 130%; } .wrap { width: min(1600px, 100% - 96px); } }
+@media (min-width: 3200px) { html { font-size: 180%; } .wrap { width: min(2400px, 100% - 160px); } }
+@media (prefers-reduced-motion: reduce) { .key { transition: none; } .key:active { transform: none; } }</style>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="bar">
   <div class="wrap">
-    <a class="brand" href="index.html"><img src="img/icon.svg" alt="" width="36" height="36"><span>Hush Hour</span></a>
-    <nav aria-label="Guide pages"><a href="index.html">Home</a><a href="guide.html" aria-current="page">Guide</a><a href="faq.html">Questions</a><a href="report.html">Report a bug</a></nav>
+    <a class="brand" href="index.html"><img src="img/icon.svg" alt="" width="34" height="34"><span>Hush Hour</span></a>
+    <nav aria-label="Guide pages"><a class="hide-s" href="index.html">Home</a><a class="hide-s" href="guide.html" aria-current="page">Guide</a><a class="hide-s" href="faq.html">Questions</a><a class="hide-s" href="report.html">Report a bug</a><a class="key" href="https://play.google.com/store/apps/details?id=com.zanoshky.hushhour">Get the app</a></nav>
   </div>
 </header>
 <main id="main" class="page">
   <div class="wrap">
 
-    <p class="kicker">Guide</p>
+    <p class="lbl">Guide</p>
     <h1>How Hush Hour works</h1>
 
-    <h2>Start in one tap</h2>
-    <p>Press the big play button on home. The first time, soft rain on the roof plays. The line under the time says what plays and how long until it fades out.</p>
+    <div class="with-shot">
+      <div class="doc">
+        <h2>Start in one tap</h2>
+        <p>Hush Hour opens on Sounds. Press the round play key under the dial. The first time, soft rain on the roof plays. The dial says what is going on (Ready, Time left, Fading out or All night), how long is left, and the clock time it goes silent. The line under it names what plays.</p>
 
-    <h2>Sounds</h2>
-    <p>Scroll down to the sound tiles. Tap a tile to add its sound to the mix, tap it again to take it out. A tile that is on glows in its colour, gets a bright edge and a dot in the corner. You can play up to eight sounds at once.</p>
-    <dl>
-      <dt>Rain</dt><dd>Rain on a yard, rain on the glass (Window), on the roof, on a tent, a mountain downpour, and a storm with far thunder now and then.</dd>
-      <dt>Water</dt><dd>Waves on the shore (Ocean) and a river murmur (Stream).</dd>
-      <dt>Woods and night</dt><dd>Birds in the trees (Forest), wind in the leaves, and crickets on a summer night with an owl now and then.</dd>
-      <dt>Fire</dt><dd>A campfire and a fireplace, with a log popping now and then.</dd>
-      <dt>Noise</dt><dd>A bedroom fan, and white, pink and brown noise. White is bright like a hiss, pink is softer like steady rain, brown is deep and low.</dd>
-    </dl>
-    <p>Rare moments (thunder, the owl, a pop in the fire) can be turned off in Settings, Sound.</p>
+        <h2>Two sections in the bar</h2>
+        <p>The bar at the foot of the screen has two sections, Sounds and Mixes. The one you are on sits on a blue pill. Tap the other to switch; it opens at its top. Tap the one you are on to scroll back to its top.</p>
+        <p>At the top right are two keys on both sections: the moon dims the screen, and the three dots open More.</p>
+      </div>
+      <figure><img src="img/home-playing.jpg" alt="Sounds while playing: the time, the sleep timer dial with 45 minutes left and Silent by 11:15 PM, the pause key, the mix name and the timer chips, with Sounds and Mixes in the bar at the foot." width="540" height="1200" loading="lazy" decoding="async"><figcaption>Sounds<span>The dial, play and the timer chips.</span></figcaption></figure>
+    </div>
 
-    <h2>Your mix</h2>
-    <p>Under the tiles, each sound in the mix has its own slider, and a cross to take it out. The Overall level slider sets the whole mix. Keep it low: soft enough that you could talk over it.</p>
-    <p>Tap Save this mix, give it a name and tap Save. Your mixes are on the Mixes page (the stacked layers button at the top left of home), with nine ready made ones like Rainy cabin, Storm at sea and Deep focus. Tap a mix to play it. The cross on your own mixes deletes them.</p>
+    <div class="with-shot">
+      <div class="doc">
+        <h2>Sounds</h2>
+        <p>Scroll down on Sounds to the sound tiles. Tap a tile to add its sound to the mix, tap it again to take it out. A tile that plays is lit in moonlight, with a bar along its foot that shows its level. You can play up to eight sounds at once.</p>
+        <dl class="rows plate">
+          <div><dt>Rain</dt><dd>Rain on a yard, rain on the glass (Window), on the roof, on a tent, a mountain downpour, and a storm with far thunder now and then.</dd></div>
+          <div><dt>Water</dt><dd>Waves on the shore (Ocean) and a river murmur (Stream).</dd></div>
+          <div><dt>Woods and night</dt><dd>Birds in the trees (Forest), wind in the leaves, and crickets on a summer night with an owl now and then.</dd></div>
+          <div><dt>Fire</dt><dd>A campfire and a fireplace, with a log popping now and then.</dd></div>
+          <div><dt>Noise</dt><dd>A bedroom fan, and white, pink and brown noise. White is bright like a hiss, pink is softer like steady rain, brown is deep and low.</dd></div>
+        </dl>
+        <p style="margin-top:16px">Rare moments (thunder, the owl, a pop in the fire) can be turned off in Settings, Sound.</p>
+      </div>
+      <figure><img src="img/sounds.jpg" alt="The sound tiles: Rain, Window, Roof, Tent, Downpour, Storm, Ocean, Stream, Forest, Wind, Crickets, Campfire, Fireplace, Fan and White noise. The five in the mix are lit." width="540" height="1200" loading="lazy" decoding="async"><figcaption>The tiles<span>A lit tile is in the mix.</span></figcaption></figure>
+    </div>
 
-    <h2>The sleep timer</h2>
-    <p>The chips on home set the timer: 15 or 30 minutes, 45 (the default), 1 hour, 1 hour 30, 2 hours, or All night. The timer starts when you press play. Near the end the sound fades out slowly, over 10 minutes by default; pick 5 or 20 in Settings, Sleep timer.</p>
-    <p>Why a timer by default? Steady sound helps most while you fall asleep, and one study found noise left on all night took some dream sleep. All night is there if you want it.</p>
+    <div class="with-shot">
+      <div class="doc">
+        <h2>Your mix</h2>
+        <p>Under the tiles, Your mix lists each sound that plays with its own slider, its level, and a cross to take it out. Overall level sets the whole mix. Keep it low: soft enough that you could talk over it.</p>
+        <p>Save this mix, at the foot of the card, takes you to Mixes with the name box ready.</p>
+      </div>
+      <figure><img src="img/levels.jpg" alt="Your mix: Roof, Campfire, Ocean, Crickets and Brown noise, each with its level and a cross to take it out, then Overall level and Save this mix." width="540" height="1200" loading="lazy" decoding="async"><figcaption>Your mix<span>A slider for each sound.</span></figcaption></figure>
+    </div>
 
-    <h2>The night scene</h2>
-    <p>The scene behind home shows what you hear: rain falls for the rain sounds, drops gather on the glass for Window, the clouds light up softly when the storm's thunder rolls, the sea fills the valley, a campfire burns with embers rising, fireflies come out over the crickets and the forest, mist moves with the wind, and noise hangs an aurora in the sky.</p>
-    <p>It only moves while you look at it. With the screen off or the app in the background nothing is drawn. If you like it calm, turn on Settings, Look, Still scene. With animations turned off in Android, it stands still too.</p>
+    <div class="with-shot">
+      <div class="doc">
+        <h2>Mixes</h2>
+        <p>At the top of Mixes, Save what plays now: type a name, like Sunday rain, and tap Save. Your mixes show under Yours, with a cross to delete each one. Under Ready made are nine to start from: Rainy cabin, Summer night, Campfire, Storm at sea, Tent in the rain, Window seat, Shore at dawn, Deep focus and Soft hush.</p>
+        <p>Tap a mix to play it. Hush Hour plays it and takes you back to Sounds. The mix that plays says Playing now, in moonlight.</p>
+      </div>
+      <figure><img src="img/mixes.jpg" alt="Mixes: a box to name and save what plays now, Yours with the line Mixes you save show here, then Ready made: Rainy cabin, Summer night and Campfire." width="540" height="1200" loading="lazy" decoding="async"><figcaption>Mixes<span>Save yours, or start from nine.</span></figcaption></figure>
+    </div>
 
-    <h2>Dim the screen</h2>
-    <p>Tap the moon button at the top of home. The screen goes black with only the time, in a dim grey, and the brightness drops to the lowest. Tap anywhere, or press Back, to wake it.</p>
+    <div class="with-shot">
+      <div class="doc">
+        <h2>The sleep timer</h2>
+        <p>The chips under the dial set the timer: 15 or 30 minutes, 45 (the default), 1 hour, 1 hour 30, 2 hours, 2 hours 30, or All night. The chosen chip is blue with a small tick. The timer starts when you press play. Near the end the sound fades out slowly, over 10 minutes by default; pick 5 or 20 in Settings, Sleep timer.</p>
+        <p>Why a timer by default? Steady sound helps most while you fall asleep, and one study found noise left on all night took some dream sleep. All night is there if you want it.</p>
 
-    <h2>With the screen off</h2>
-    <p>Sound keeps playing with the screen off. The notification and the lock screen show what plays, with pause and stop. A call or an alarm pauses it, and it comes back after. If headphones come out, it pauses so the sound never jumps to the speaker (you can turn that off in Settings, Sound). To play under a podcast or audiobook, turn on Play along with other apps.</p>
+        <h2>More</h2>
+        <p>The three dots at the top open More, a sheet from the foot of the screen. It names what plays, then holds Save this mix, Add the widget and Settings.</p>
+      </div>
+      <figure><img src="img/more.jpg" alt="The More sheet: Hush Hour, what plays now, then Save this mix, Add the widget and Settings." width="540" height="1200" loading="lazy" decoding="async"><figcaption>More<span>Save, the widget, Settings.</span></figcaption></figure>
+    </div>
 
-    <h2>The widget</h2>
-    <p>Settings, Home screen, Add the widget. Or touch and hold your home screen, pick Widgets, then Hush Hour. The widget shows the mix and plays or pauses it with one tap. Tap its words to open the app.</p>
+    <div class="with-shot">
+      <div class="doc">
+        <h2>Dim the screen</h2>
+        <p>Tap the moon at the top. The screen goes black with only the time, in a dim grey, and the brightness drops to the lowest. Tap anywhere, or press Back, to wake it.</p>
 
-    <h2>Settings</h2>
-    <dl>
-      <dt>Look</dt><dd>Night, a deep midnight sky, or True black for OLED screens and dark rooms. Still scene stops all motion.</dd>
-      <dt>Sleep timer</dt><dd>How long the fade at the end takes.</dd>
-      <dt>Sound</dt><dd>Rare moments on or off; Keep it quiet, a soft ceiling on loudness (on by default); pause when headphones come out; play along with other apps.</dd>
-      <dt>Help</dt><dd>This guide, the report page and the privacy policy.</dd>
-    </dl>
+        <h2>With the screen off</h2>
+        <p>Sound keeps playing with the screen off. The notification and the lock screen show what plays, with pause and stop. A call or an alarm pauses it, and it comes back after. If headphones come out, it pauses so the sound never jumps to the speaker (you can turn that off in Settings, Sound). To play under a podcast or audiobook, turn on Play along with other apps.</p>
 
-    <h2>Accessibility</h2>
-    <p>Every control has a TalkBack label, and each sound tile is read as a switch that is on or off. Touch targets are at least 48 dp, text grows with the phone's font size (the tiles get wider as it does), and text keeps a 7 to 1 contrast in both themes.</p>
+        <h2>The widget</h2>
+        <p>Pick Add the widget in More or in Settings, Home screen. Or touch and hold your home screen, pick Widgets, then Hush Hour. The widget shows the mix and plays or pauses it with one tap. Tap its words to open the app.</p>
+      </div>
+      <figure><img src="img/dim.jpg" alt="The dimmed screen: black, with only the time in a dim grey." width="540" height="1200" loading="lazy" decoding="async"><figcaption>Dimmed<span>Only the time, in dim grey.</span></figcaption></figure>
+    </div>
+
+    <div class="with-shot">
+      <div class="doc">
+        <h2>Settings</h2>
+        <p>Open Settings from More. It fills the screen; the arrow at the top left takes you back.</p>
+        <dl class="rows plate">
+          <div><dt>Look</dt><dd>Follow the phone (Light by day, Dark at night), Light, Dark, or Black, true black for OLED screens and dark rooms. Dark is where Hush Hour starts.</dd></div>
+          <div><dt>Sleep timer</dt><dd>How long the fade at the end takes: 5 minutes, 10 minutes (gentle) or 20 minutes (very slow), and why it fades.</dd></div>
+          <div><dt>Sound</dt><dd>Rare moments on or off; Keep it quiet, a soft ceiling on loudness; pause when headphones come out; play along with other apps.</dd></div>
+          <div><dt>Home screen</dt><dd>Add the widget.</dd></div>
+          <div><dt>Privacy</dt><dd>The promises (no ads, no tracking, no analytics, no crash or error reports, no account, no AI, no internet), and every permission the app holds and why.</dd></div>
+          <div><dt>Help</dt><dd>This guide, the report page and the privacy policy.</dd></div>
+          <div><dt>Support the developer</dt><dd>Buy me a coffee, at buymeacoffee.com/zanoshky.</dd></div>
+          <div><dt>About</dt><dd>The version, and where the recordings come from.</dd></div>
+        </dl>
+      </div>
+      <figure><img src="img/privacy.jpg" alt="Privacy in Settings: red ban chips No ads, No tracking, No analytics, No crash reports, No error reports, No account, No AI and No internet, the five promises, then Play in the background and Keep the phone awake with why." width="540" height="1200" loading="lazy" decoding="async"><figcaption>Privacy<span>Every promise and permission.</span></figcaption></figure>
+    </div>
+
+    <div class="doc">
+      <h2>Accessibility</h2>
+      <p>Every control has a TalkBack label, and each sound tile is read as a switch that is on or off. Touch targets are at least 48 dp, text grows with the phone's font size (the tiles get wider as it does), and words keep a 7 to 1 contrast in every look.</p>
+    </div>
 
   </div>
 </main>
 <footer>
   <div class="wrap">
-    <span>Guide text and images are shared under CC BY 4.0. The Hush Hour app itself is proprietary. Made by Marko Zanoski.</span>
-    <nav aria-label="Footer"><a href="https://play.google.com/store/apps/details?id=com.zanoshky.hushhour">Google Play</a><a href="https://hushhour.zanoski.com">hushhour.zanoski.com</a><a href="https://github.com/Zanoshky/hush-hour-app/issues">Issues</a><a href="https://hushhour.zanoski.com/privacy">Privacy</a></nav>
+    <span>Hush Hour by <a href="https://zanoski.com">Marko Zanoski</a></span>
+    <nav aria-label="Footer"><a href="https://hushhour.zanoski.com">Home</a><a href="index.html">User guide</a><a href="faq.html">Questions</a><a href="report.html">Report a bug</a><a href="https://hushhour.zanoski.com/privacy">Privacy</a><a href="https://hushhour.zanoski.com/terms">Terms</a></nav>
+    <p class="lic">Guide text and images are shared under CC BY 4.0. The Hush Hour app itself is proprietary.</p>
   </div>
 </footer>
 </body>
