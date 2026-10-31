@@ -20,7 +20,10 @@ CSS = re.sub(r"\s*\n\s*", "\n", CSS).strip()
 
 def shot(img, alt, name, line, lazy=True):
     load = 'loading="lazy" decoding="async"' if lazy else 'fetchpriority="high"'
-    return (f'<figure><img src="img/{img}" alt="{alt}" width="540" height="1200" {load}>'
+    stem = img.rsplit(".", 1)[0]
+    # The jpg stays for the README on GitHub; pages pick a small webp, about half the bytes.
+    src = f'srcset="img/{stem}-300.webp 300w, img/{stem}-540.webp 540w" sizes="(min-width: 840px) 260px, 45vw"'
+    return (f'<figure><img src="img/{img}" {src} alt="{alt}" width="540" height="1200" {load}>'
             f'<figcaption>{name}<span>{line}</span></figcaption></figure>')
 
 
