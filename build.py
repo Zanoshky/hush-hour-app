@@ -87,10 +87,10 @@ page("index.html", "Home", "The user guide for Hush Hour, the white noise and sl
       <a class="key tonal" href="report.html">Report a bug or ask for a feature</a>
     </div>
     <ul class="shots">
-      <li>{shot("home-playing.jpg", "Sounds while playing: the time, the sleep timer dial with 45 minutes left and Silent by 11:15 PM, the pause key, the mix name and the timer chips, with Sounds and Mixes in the bar at the foot.", "Sounds", "The dial, play and the timer.", lazy=False)}</li>
-      <li>{shot("sounds.jpg", "The sound tiles on Sounds: Rain, Window, Roof, Tent, Downpour, Storm, Ocean, Stream, Forest, Wind, Crickets, Campfire, Fireplace, Fan and White noise. The five in the mix are lit.", "The sounds", "Tap a tile to add it.")}</li>
+      <li>{shot("home-playing.jpg", "Sounds while playing: the time, the sleep timer dial with 45 minutes left and Silent by 11:15 PM, the pause key, the mix name and the timer chips, with Sounds, Mixes and Settings in the bar at the foot.", "Sounds", "The dial, play and the timer.", lazy=False)}</li>
+      <li>{shot("sounds.jpg", "The sound tiles on Sounds: Rain, Window, Roof, Tent, Downpour, Storm, Ocean, Stream, Forest, Wind, Crickets, Campfire, Fireplace, Fan, White noise and Pink noise. The five in the mix are lit.", "The sounds", "Tap a tile to add it.")}</li>
       <li>{shot("mixes.jpg", "Mixes: a box to name and save what plays now, your own mixes, then ready made ones like Rainy cabin, Summer night and Campfire.", "Mixes", "Yours, and nine ready made.")}</li>
-      <li>{shot("settings.jpg", "Settings: cards of rows, Look, Sleep and sound with Sleep timer, Sound and Add the widget, then App with Privacy and Help and feedback, each saying what is set now.", "Settings", "The third item in the bar.")}</li>
+      <li>{shot("settings.jpg", "Settings: cards of rows, Look, Sleep and sound with Sleep timer, Sound and Add the widget, then App with Privacy and Help and feedback, each saying what is set now.", "Settings", "The last item in the bar.")}</li>
     </ul>
 """)
 
@@ -107,7 +107,7 @@ page("guide.html", "Guide", "How to use Hush Hour: Sounds, Mixes and Settings, t
         <p>The bar at the foot of the screen has three sections: Sounds, Mixes and Settings. The one you are on sits on a blue pill. Tap another to switch; it opens at its top. Tap the one you are on to scroll back to its top. Back on Mixes or Settings takes you to Sounds.</p>
         <p>At the top right are two keys on every section: the moon dims the screen, and the three dots open More.</p>
       </div>
-      {shot("home-playing.jpg", "Sounds while playing: the time, the sleep timer dial with 45 minutes left and Silent by 11:15 PM, the pause key, the mix name and the timer chips, with Sounds and Mixes in the bar at the foot.", "Sounds", "The dial, play and the timer chips.")}
+      {shot("home-playing.jpg", "Sounds while playing: the time, the sleep timer dial with 45 minutes left and Silent by 11:15 PM, the pause key, the mix name and the timer chips, with Sounds, Mixes and Settings in the bar at the foot.", "Sounds", "The dial, play and the timer chips.")}
     </div>
 
     <div class="with-shot">
@@ -123,7 +123,7 @@ page("guide.html", "Guide", "How to use Hush Hour: Sounds, Mixes and Settings, t
         </dl>
         <p style="margin-top:16px">Rare moments (thunder, the owl, a pop in the fire) can be turned off in Settings, Sound.</p>
       </div>
-      {shot("sounds.jpg", "The sound tiles: Rain, Window, Roof, Tent, Downpour, Storm, Ocean, Stream, Forest, Wind, Crickets, Campfire, Fireplace, Fan and White noise. The five in the mix are lit.", "The tiles", "A lit tile is in the mix.")}
+      {shot("sounds.jpg", "The sound tiles: Rain, Window, Roof, Tent, Downpour, Storm, Ocean, Stream, Forest, Wind, Crickets, Campfire, Fireplace, Fan, White noise and Pink noise. The five in the mix are lit.", "The tiles", "A lit tile is in the mix.")}
     </div>
 
     <div class="with-shot">
@@ -173,7 +173,7 @@ page("guide.html", "Guide", "How to use Hush Hour: Sounds, Mixes and Settings, t
     <div class="with-shot">
       <div class="doc">
         <h2>Settings</h2>
-        <p>Settings is the third item in the bar. It is a page of cards, each row saying what is set now; a row with an arrow opens its own small page, and the arrow at the top left of that page takes you back.</p>
+        <p>Settings is the last item in the bar. It is a page of cards, each row saying what is set now; a row with an arrow opens its own small page, and the arrow at the top left of that page takes you back.</p>
         <dl class="rows plate">
           <div><dt>Look</dt><dd>Follow the phone (Light by day, Dark at night), Light, Dark, or Black, true black for OLED screens and dark rooms. Dark is where Hush Hour starts.</dd></div>
           <div><dt>Sleep timer</dt><dd>How long the fade at the end takes: 5 minutes, 10 minutes (gentle) or 20 minutes (very slow), and why it fades.</dd></div>
@@ -181,7 +181,7 @@ page("guide.html", "Guide", "How to use Hush Hour: Sounds, Mixes and Settings, t
           <div><dt>Add the widget</dt><dd>Play and pause from your home screen.</dd></div>
           <div><dt>Privacy</dt><dd>The promises as red ban chips, every permission the app holds and why, and the privacy policy in full.</dd></div>
           <div><dt>Help and feedback</dt><dd>This guide, the report page, a note that Hush Hour is for rest and not medical care, and the credits: where the recordings come from and the fonts.</dd></div>
-          <div><dt>Support the developer</dt><dd>Buy me a coffee, at buymeacoffee.com/zanoshky.</dd></div>
+          <div><dt>Support the developer</dt><dd>A short line, If Hush Hour helps you, you can support it, over the Buy me a coffee row, which opens buymeacoffee.com/zanoshky in your browser.</dd></div>
           <div><dt>About</dt><dd>The version, and where your mixes and settings are kept.</dd></div>
         </dl>
       </div>
@@ -209,7 +209,7 @@ page("faq.html", "Questions", "Answers to common questions about Hush Hour, and 
     <p>Use the Overall level slider in Your mix on Sounds and your phone's volume buttons. Keep it quiet sets a soft ceiling; turn it off in Settings, Sound if the phone is far away and you need more.</p>
 
     <h2>Where did my mixes go?</h2>
-    <p>Saved mixes are on Mixes, in the bar at the foot of the screen, under Yours. Settings is the third item in that bar.</p>
+    <p>Saved mixes are on Mixes, in the bar at the foot of the screen, under Yours. Settings is the last item in that bar.</p>
 
     <h2>Can I hear the loop?</h2>
     <p>Each sound is a loop of two to four minutes that joins without a seam, starts at a new point every time, and drifts a little in level, so it should never sound the same twice. If you can hear a click or a jump in one sound, please report it with the sound's name.</p>
