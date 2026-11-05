@@ -21,7 +21,7 @@ This repo is the public home for Hush Hour users: the user guide, bug reports an
 
 ## Quick start
 
-1. Install Hush Hour from Google Play. It runs on Android 7 or newer.
+1. Install Hush Hour from Google Play. It runs on Android 10 or newer.
 2. Press play under the dial on Sounds. Soft rain on the roof starts, and fades out after 45 minutes.
 3. Scroll down and tap sound tiles to mix up to eight sounds, each with its own slider.
 4. Pick a timer chip, or All night.
