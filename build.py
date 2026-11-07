@@ -181,7 +181,6 @@ page("guide.html", "Guide", "How to use Hush Hour: Sounds, Mixes and Settings, t
           <div><dt>Add the widget</dt><dd>Play and pause from your home screen.</dd></div>
           <div><dt>Privacy</dt><dd>The promises as red ban chips, every permission the app holds and why, and the privacy policy in full.</dd></div>
           <div><dt>Help and feedback</dt><dd>This guide, the report page, a note that Hush Hour is for rest and not medical care, and the credits: where the recordings come from and the fonts.</dd></div>
-          <div><dt>Support the developer</dt><dd>A short line, If Hush Hour helps you, you can support it, over the Buy me a coffee row, which opens buymeacoffee.com/zanoshky in your browser.</dd></div>
           <div><dt>About</dt><dd>The version, and where your mixes and settings are kept.</dd></div>
         </dl>
       </div>
