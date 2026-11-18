@@ -9,7 +9,7 @@ from pathlib import Path
 
 D = Path(__file__).parent / "docs"
 REPO = "https://github.com/Zanoshky/hush-hour-app"
-PLAY = "https://play.google.com/store/apps/details?id=com.zanoshky.hushhour"
+PLAY = "https://play.google.com/store/apps/details?id=com.zanoshky.hushhour&amp;referrer=utm_source%3Dguide%26utm_medium%3Ddocs%26utm_campaign%3Dhush-hour-2026-11"
 SITE = "https://hushhour.zanoski.com"
 NAV = [("index.html", "Home"), ("guide.html", "Guide"), ("faq.html", "Questions"), ("report.html", "Report a bug")]
 

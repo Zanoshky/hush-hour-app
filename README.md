@@ -7,7 +7,7 @@
 <p align="center">White noise and sleep sounds from real recordings, with a sleep timer that fades out. Pay once, no ads, works offline.</p>
 
 <p align="center">
-  <a href="https://play.google.com/store/apps/details?id=com.zanoshky.hushhour"><b>Google Play</b></a> ·
+  <a href="https://play.google.com/store/apps/details?id=com.zanoshky.hushhour&referrer=utm_source%3Dgithub%26utm_medium%3Dreadme%26utm_campaign%3Dhush-hour-2026-11"><b>Google Play</b></a> ·
   <a href="https://hushhour.zanoski.com"><b>hushhour.zanoski.com</b></a> ·
   <a href="https://zanoshky.github.io/hush-hour-app/"><b>User guide</b></a> ·
   <a href="https://github.com/Zanoshky/hush-hour-app/issues/new/choose"><b>Report a bug</b></a>
