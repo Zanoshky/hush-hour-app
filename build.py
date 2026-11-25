@@ -165,7 +165,7 @@ page("guide.html", "Guide", "How to use Hush Hour: Sounds, Mixes and Settings, t
         <p>Sound keeps playing with the screen off. The notification and the lock screen show what plays, with pause and stop. A call or an alarm pauses it, and it comes back after. If headphones come out, it pauses so the sound never jumps to the speaker (you can turn that off in Settings, Sound). To play under a podcast or audiobook, turn on Play along with other apps.</p>
 
         <h2>The widget</h2>
-        <p>Pick Add the widget in More or in Settings, Sleep and sound. Or touch and hold your home screen, pick Widgets, then Hush Hour. The widget shows the mix and plays or pauses it with one tap. Tap its words to open the app.</p>
+        <p>Pick Add the widget in More, or open Settings, Widget. Or touch and hold your home screen, pick Widgets, then Hush Hour. The widget shows the mix and plays or pauses it with one tap. Tap its words to open the app.</p>
       </div>
       {shot("dim.jpg", "The dimmed screen: black, with only the time in a dim grey.", "Dimmed", "Only the time, in dim grey.")}
     </div>
@@ -173,16 +173,17 @@ page("guide.html", "Guide", "How to use Hush Hour: Sounds, Mixes and Settings, t
     <div class="with-shot">
       <div class="doc">
         <h2>Settings</h2>
-        <p>Settings is the last item in the bar. It is a page of cards, each row saying what is set now; a row with an arrow opens its own small page, and the arrow at the top left of that page takes you back.</p>
+        <p>Settings is the last item in the bar. It is a page of cards, each row saying what is set now; a row with an arrow opens its own small page, and the arrow at the top left of that page takes you back. The widget and About have pages of their own, and Privacy, Help and About sit at the end.</p>
+        <p><strong>New in 1.12:</strong> Settings is tidier: About and widgets have pages of their own, and Privacy, Help and About sit at the end.</p>
         <dl class="rows plate">
           <div><dt>Look</dt><dd>Follow the phone (Light by day, Dark at night), Light, Dark, or Black, true black for OLED screens and dark rooms. Dark is where Hush Hour starts.</dd></div>
           <div><dt>Sleep timer</dt><dd>How long the fade at the end takes: 5 minutes, 10 minutes (gentle) or 20 minutes (very slow), and why it fades.</dd></div>
           <div><dt>Sound</dt><dd>Rare moments on or off; Keep it quiet, a soft ceiling on loudness; pause when headphones come out; play along with other apps.</dd></div>
           <div><dt>Language</dt><dd>Pick the language of the app from the list, or choose Follow the phone. The choice is for Hush Hour only; the phone stays as it is.</dd></div>
-          <div><dt>Add the widget</dt><dd>Play and pause from your home screen.</dd></div>
+          <div><dt>Widget</dt><dd>Opens a page where you add the widget: play and pause from your home screen.</dd></div>
           <div><dt>Privacy</dt><dd>The promises as red ban chips, every permission the app holds and why, and the privacy policy in full.</dd></div>
           <div><dt>Help and feedback</dt><dd>This guide, the report page, a note that Hush Hour is for rest and not medical care, and the credits: where the recordings come from and the fonts.</dd></div>
-          <div><dt>About</dt><dd>The version, and where your mixes and settings are kept.</dd></div>
+          <div><dt>About</dt><dd>The last row. It opens a page with the version, and where your mixes and settings are kept.</dd></div>
         </dl>
       </div>
       {shot("privacy.jpg", "Privacy in Settings: red ban chips No ads, No tracking, No analytics, No crash reports, No error reports, No account, No AI and No internet, then Play in the background, Keep the phone awake and Internet denied by design, each with why.", "Privacy", "Every promise and permission, once.")}
@@ -248,7 +249,7 @@ page("report.html", "Report a bug", "How to report a Hush Hour bug or ask for a 
 
     <h2>What helps</h2>
     <dl class="rows plate">
-      <div><dt>App version</dt><dd>Settings, About, or Android settings, Apps, Hush Hour.</dd></div>
+      <div><dt>App version</dt><dd>Settings, About (the last row), or Android settings, Apps, Hush Hour.</dd></div>
       <div><dt>Phone model and Android version</dt><dd>Android settings, About phone.</dd></div>
       <div><dt>Which screen or sound</dt><dd>Sounds, a sound by name, the timer, Your mix, Mixes, More, Settings, the notification or the widget.</dd></div>
       <div><dt>Steps</dt><dd>What you did, one step per line, so we can do the same.</dd></div>
