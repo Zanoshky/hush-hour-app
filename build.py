@@ -174,6 +174,7 @@ page("guide.html", "Guide", "How to use Hush Hour: Sounds, Mixes and Settings, t
       <div class="doc">
         <h2>Settings</h2>
         <p>Settings is the last item in the bar. It is a page of cards, each row saying what is set now; a row with an arrow opens its own small page, and the arrow at the top left of that page takes you back. The widget and About have pages of their own, and Privacy, Help and About sit at the end.</p>
+        <p><strong>New in 1.14:</strong> Text sizes are simpler and easier to read.</p>
         <p><strong>New in 1.13:</strong> Page titles are smaller, so more of each page fits on the screen.</p>
         <p><strong>New in 1.12:</strong> Settings is tidier: About and widgets have pages of their own, and Privacy, Help and About sit at the end.</p>
         <dl class="rows plate">
